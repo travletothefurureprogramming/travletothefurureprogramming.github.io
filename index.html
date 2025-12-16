@@ -28,6 +28,7 @@
         h2 {
             color: #555;
         }
+        /* Στυλ για τις Γενικές Δεξιότητες */
         .skills-list {
             list-style: none;
             padding: 0;
@@ -53,6 +54,37 @@
             color: #007bff;
             text-decoration: none;
         }
+        
+        /* ΝΕΟ Στυλ για τα Projects */
+        .project-item {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            background: #fdfdfd;
+        }
+        .project-item h3 {
+            color: #0056b3; 
+            margin-top: 0;
+        }
+        .project-skills {
+            list-style: none;
+            padding: 0;
+        }
+        .project-skills li {
+            background: #d4edda; /* Πράσινο φόντο για τις δεξιότητες του project */
+            color: #155724;
+            padding: 6px 12px;
+            margin: 4px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        .project-links a {
+            margin-right: 15px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -63,7 +95,7 @@
     
     <h2>Σύνοψη</h2>
     <p>
-        Είμαι ένας φιλόδοξος μαθητής με βαθύ πάθος για τη διασταύρωση της Ρομποτικής και της Τεχνητής Νοημοσύνης (AI). Έχω ισχυρές βάσεις στον προγραμματισμό (Python/C++) και σε embedded συστήματα (Arduino). Στόχος μου είναι να δημιουργήσω αυτόνομα συστήματα και να εργαστώ ως Engineer σε κορυφαίες εταιρείες (FAANG).
+        Είμαι ένας φιλόδοξος μαθητής με βαθύ πάθος για τη διασταύρωση της **Ρομποτικής** και της **Τεχνητής Νοημοσύνης (AI)**. Έχω ισχυρές βάσεις στον προγραμματισμό (Python/C++) και σε embedded συστήματα (Arduino). Στόχος μου είναι να δημιουργήσω αυτόνομα συστήματα και να εργαστώ ως Engineer σε κορυφαίες εταιρείες.
     </p>
 
     <h2>Τεχνικές Δεξιότητες</h2>
@@ -83,9 +115,44 @@
     <h2 id="projects">Projects & Εργαλεία</h2>
     <p class="links">
         <a href="https://github.com/travletothefurureprogramming">GitHub Profile</a> | 
-        <a href="https://www.youtube.com/@travletothefurureprogramming">YouTube Channel (Δοκιμές Ρομπότ)</a> | 
+        <a href="https://www.youtube.com/@travletothefurureprogramming">YouTube Channel (Δοκιμές Ρομπότ)</a>
     </p>
 
+    <div class="project-item">
+        <h3>1. Αυτόνομο Ρομπότ Αποφυγής Εμποδίων</h3>
+        <p>
+            Ανάπτυξη ενός αυτόνομου ρομπότ χρησιμοποιώντας την πλακέτα **Arduino Uno** και αισθητήρες υπερήχων. Το ρομπότ είναι προγραμματισμένο σε **C++** για να πλοηγείται σε έναν χώρο, αποφεύγοντας δυναμικά τα εμπόδια. 
+        </p>
+        <h4>Τεχνολογίες & Δεξιότητες</h4>
+        <ul class="project-skills">
+            <li>Arduino Uno</li>
+            <li>C++ (Embedded)</li>
+            <li>Αισθητήρες Υπερήχων</li>
+            <li>Ηλεκτρονικά Κυκλώματα</li>
+        </ul>
+        <div class="project-links">
+            <a href="https://github.com/ibpsa/project1" target="_blank">→ Δες τον Κώδικα στο GitHub</a>
+            <a href="https://www.youtube.com/watch?v=jNQXAC9IVRw&vl=en" target="_blank">→ Δες τη Δοκιμή στο YouTube</a>
+        </div>
+    </div>
+
+    <div class="project-item">
+        <h3>2. Σύστημα Ταξινόμησης Εικόνων με Τεχνητή Νοημοσύνη</h3>
+        <p>
+            Δημιουργία ενός μοντέλου **Convolutional Neural Network (CNN)** σε **Python** (με χρήση **PyTorch**) για την ταξινόμηση εικόνων σε 10 κατηγορίες. Χρησιμοποιήθηκε το dataset CIFAR-10.
+        </p>
+        <h4>Τεχνολογίες & Δεξιότητες</h4>
+        <ul class="project-skills">
+            <li>Python</li>
+            <li>PyTorch</li>
+            <li>Μοντέλα CNN</li>
+            <li>Machine Learning</li>
+        </ul>
+        <div class="project-links">
+            <a href="https://docs.github.com/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects" target="_blank">→ Δες τον Κώδικα στο GitHub</a>
+        </div>
+    </div>
+    
     <hr>
     <footer>
         <p>&copy; 2025 Travel To The Future Of Programming And Robotics Όλα τα δικαιώματα διατηρούνται.</p>
